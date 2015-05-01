@@ -193,7 +193,7 @@ maximum_lengths = {
     i: max(len(d.display_row[i]) for d in dipslay_data)
     for i in range(len(DISPLAY_ROW_FIELDS))}
 
-result = ['<meta charset="UTF-8"><html><body><font face=monaco>']
+result = ['<meta charset="UTF-8"><html><body><font face="monaco, monospace">']
 first_grey_found = False
 for data in sorted(dipslay_data, key=lambda d: (
     not d.data_today, -ord(d.goal_type[0]), d.display_row.title)):
